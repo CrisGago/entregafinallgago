@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/*variables*/ /*tamaños*/
+/*colores*/
+/*font*/
+/*esta clasificación lo puedo utilizar
+para todo no solo para margen*/
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  font-size: 20px;
+  color: black;
+  padding: 20px 30px;
+  display: block;
+}
+nav ul li a:hover {
+  background-color: rgb(255, 235, 205);
+}
+
+/*Componenetes*/
+body {
+  background-color: rgba(255, 235, 204, 0.05);
+  margin: 20px 0;
+}
+body aside {
+  font-family: "Comic Neue", cursive;
+  font-size: 20px;
+  text-align: center;
+  text-justify: auto;
+  background-color: rgba(241, 235, 241, 0.3);
+}
+body form {
+  padding: 100px;
+  margin: 100px;
+}
+body form fieldset {
+  margin: 10px;
+}
+
+footer {
+  margin: 10PX;
+}
+footer section {
+  display: flex;
+  margin: 40px;
+  padding: 10px;
+}
+footer p {
+  padding: 10px;
+  font-family: "Comic Neue", cursive;
+  font-size: 12.5px;
+}
+
+header {
+  background-repeat: no-repeat;
+  grid-area: header;
+}
+header .logo img {
+  margin: 0;
+  padding: 0;
+}
+header h1 {
+  font-size: 30px;
+  background-color: blanchedalmond;
+  margin: 0;
+  color: black;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+aside {
+  font-family: "Comic Neue", cursive;
+  font-size: 20px;
+  text-align: center;
+  text-justify: auto;
+}
+@media (max-width: 320px) {
+  aside {
+    display: none;
+  }
+}
+
+#main_soluciones h2 {
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+  margin: o;
+}
+#main_soluciones h3 {
+  color: orange;
+  background-color: rgb(255, 235, 205);
+  margin: 5px;
+  padding: 20px;
+}
+#main_soluciones p {
+  font-weight: bold;
+  text-justify: auto;
+  padding: 20px 40px;
+}
+
+@media (max-width: 320px) {
+  nav ul li a {
+    font-size: 15px;
+    padding: 5px 10px;
+    display: flex;
+  }
+}
+
+main {
+  grid-area: main;
+}
+main .destacado {
+  margin: 25px;
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+main div .centrar {
+  width: 1350px;
+  height: 450px;
+}
+main h2 {
+  padding: 20px;
+  margin: 5px;
+  font-size: 14px;
+  font-family: "Comic Neue", cursive;
+}
+
+@media (max-width: 320px) {
+  .logo img {
+    display: flex;
+  }
+  header {
+    background-image: none;
+    background-position: center;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  #menu ul li a {
+    font-size: 15px;
+    display: flex;
+    padding: 5px 10px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+}
+section {
+  grid-area: section;
+}
+section h3 {
+  background-color: rgb(255, 235, 205);
+  color: orange;
+}
+section p {
+  text-align: justify;
+}
+section .mision h3 {
+  background-color: aliceblue;
+  padding: 25px;
+  font-size: 40px;
+}
+section .mision p {
+  font-family: "Comic Neue", cursive;
+}
+section .vision h3 {
+  background-color: aliceblue;
+  padding: 25px;
+  font-size: 40px;
+}
+section .vision p {
+  font-family: "Comic Neue", cursive;
+}
+section .accion h3 {
+  background-color: aliceblue;
+  padding: 25px;
+  font-size: 40px;
+}
+section .accion p {
+  font-family: "Comic Neue", cursive;
+}
+
+.grid_contenido {
+  margin: 30px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 0.5fr 0.9fr 0.5fr;
+  display: flex;
+  justify-content: space-around;
+}
+.grid_contenido .destacado1 {
+  grid-area: destacado;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.grid_contenido .img1 {
+  height: 350px;
+  width: 200px;
+  grid-area: imagen1;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .link1 {
+  grid-area: link1;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+.grid_contenido .destacado2 {
+  grid-area: destacado;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .img2 {
+  height: 350px;
+  width: 200px;
+  grid-area: imagen1;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .link2 {
+  grid-area: link1;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+.grid_contenido .destacado3 {
+  grid-area: destacado;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .img3 {
+  height: 350px;
+  width: 200px;
+  grid-area: imagen1;
+  display: flex;
+  justify-content: center;
+}
+.grid_contenido .link3 {
+  grid-area: link1;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+
+/*# sourceMappingURL=style.css.map */

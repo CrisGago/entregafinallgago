@@ -1,0 +1,26 @@
+body{
+    background-color: rgba(255, 235, 204,5%);
+    margin: 20px 0;
+    
+
+    aside {
+        font-family: $ffont;
+        font-size: nth($szfont, 4);
+        text-align: center;
+        text-justify: auto;
+        background-color: $color
+    }
+
+    form{
+        padding: 100px;
+        margin: 100px;
+        fieldset{
+            margin: 10px;
+        
+        }   
+    }
+
+}
+
+
+
